@@ -1,0 +1,90 @@
+.cat {
+    background-color: darkred;
+    border: 2px solid white;
+    width: 1600px;
+    height: 2200px;
+    margin: 100px auto;
+    text-align: center;
+    font-size: 60px;
+}
+
+.photo {
+    display: block;
+    width: 1000px;
+    height: 800px;
+    border: 2px solid white;
+    border-radius: 10px 10px;
+    margin: 20px auto;
+}
+
+.txt {
+    width: 1200px;
+    height: 1200px;
+    border: 3px solid white;
+    border-radius: 10px 10px 10px 10px;
+    background-color: brown;
+    margin: 10px auto;
+    font-weight: lighter;
+}
+h {
+    color: white;  
+}
+
+h2 {
+    font-size: 100px;
+}
+
+body {
+    font-family: 'Gamja Flower', cursive;
+    font-size: 20px;
+    background-image: url(./images/배경화면.jfif);
+    background-size: auto;
+}
+
+.snow{
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    background: white;
+    border-radius: 50%;
+    animation: snow 10s linear infinite;
+}
+
+.snow:nth-of-type(2n){
+    width: 7px;
+    height: 7px;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+.snow:nth-of-type(2n+1){
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+.snow:nth-of-type(9n){
+    animation-duration: 9s;
+    animation-delay: 3s;
+}
+@keyframes snow {
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    20%{
+        opacity: 1;
+        transform: translate(-15px, 20vh);
+    }
+    40%{
+        opacity: 1;
+        transform: translate(15px, 40vh);
+    }
+    80%{
+        opacity: 1;
+        transform: translate(0. 80vh);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(100vh);
+    }
+}

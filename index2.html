@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-mas</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        function createSnow(){
+            const el = document.createElement("div");
+            el.classList.add('snow');
+            el.style.marginLeft = randomPosition() + 'px';
+            document.body.appendChild(el);
+        }
+        function randomPosition(){
+            return Math.floor(Math.random() * window.innerWidth);
+        }
+        for(let i=0; i < 300; i++){
+            createSnow();
+        }
+        </script>
+    
+    <div class="wrapper">
+        <div> 
+            <div class="cat">
+              <img class="photo" src="./images/하트.jfif" alt="사진">
+              <div class="txt">
+                <h>
+                    <h3>I'm so lucky to spending this Christmas with you</h3>
+                    <h3>Christmas is magical because we're together</h3>
+                    <h3>I couldn't wish for a better gift than spending Christmas with you</h3>
+                    <h3>Your love is the best gift i could ever recieve</h3>
+                    <h2>Merry Christmas, Jimin!</h2>
+                </h>
+              </div>
+            </div>
+
+        </div>
+    </div>
+       
+    
+    
+</body>
+</html>

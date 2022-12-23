@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="X-masCard">
+    <meta property="og:description" content="Merry X-mas!">
+    <meta property="og:url" content="https://m.blog.naver.com/joh6634/221724988998">
+    <meta property="og:image" content="./images/1575283352544.jpg">
+    <title>X-mas</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+  <script>
+    function createSnow(){
+        const el = document.createElement("div");
+        el.classList.add('snow');
+        el.style.marginLeft = randomPosition() + 'px';
+        document.body.appendChild(el);
+    }
+    function randomPosition(){
+        return Math.floor(Math.random() * window.innerWidth);
+    }
+    for(let i=0; i< 300; i++){
+        createSnow();
+    }
+</script>
+   <div>
+    <div>
+        <div class="wrapper">
+            <div>
+                <div class="cat">
+                    <a href="./index2.html">
+                        <img class="img" src="./images/cat1.jpg" alt="고양이">
+                    </a>
+                    <h1>Merry Christmas!</h1>
+                    <img class="pt" src="./images/pattern.png" alt="패턴">
+                </div>
+            </div>
+         </div>
+        </div>
+    </div>
+
+</body>
+</html>
